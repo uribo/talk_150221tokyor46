@@ -1,0 +1,87 @@
+---
+# Lab.note package ver. 0.2.11
+title: Tokyo.Rの闇
+subtitle: Tokyo.R#46 LT
+author: \faTwitter @u_ribo
+date: February 21, 2015
+header-includes:
+# define macro
+    - \definecolor{Black1}{HTML}{36353B}
+    - \definecolor{White1}{RGB}{255, 255, 250}
+    - \definecolor{Blue1}{HTML}{5FB8FC}
+    - \definecolor{Blue2}{HTML}{29F6E7}
+    - \definecolor{Green1}{HTML}{17CCB7}
+    - \definecolor{Yellow1}{HTML}{FEE08C}
+    - \definecolor{Red1}{HTML}{F7417A}
+# using package, setup
+    - \usepackage{zxjatype}
+    - \setjamainfont{Hiragino Kaku Gothic Pro}
+    - \usepackage{fontspec, fontawesome} # require installed FontAwesome
+    - \usepackage{scrextend}
+    - \changefontsizes{22pt}
+## comment out when if you using image for slide background 
+#   - \usebackgroundtemplate{\includegraphics[width = \paperwidth, height = \paperheight]{...png}}
+# set beamer theme
+    - \setbeamercolor{background canvas}{bg = Black1}
+    - \setbeamertemplate{navigation symbols}{}
+    - \setbeamertemplate{itemize items}{\textcolor{Blue2}{\faCaretRight}}
+    - \setbeamerfont{title}{size = \fontsize{38}{10}}
+    - \setbeamercolor{title}{fg = Blue2}
+    - \setbeamerfont{subtitle}{size = \large}
+    - \setbeamercolor{subtitle}{fg = Blue1}
+    - \setbeamercolor{author}{fg = Green1}
+    - \setbeamercolor{normal text}{fg = Yellow1}
+    - \setbeamerfont{date}{series = \itshape}
+    - \setbeamercolor{date}{fg = Red1}
+    - \setbeamercolor{frametitle}{fg = Blue2}
+# new command
+    - \renewcommand{\baselinestretch}{1.0}
+output:
+  beamer_presentation:
+    fonttheme: "structurebold"
+    keep_tex: false
+    pandoc_args:
+     ["--latex-engine=xelatex"]
+mainfont: Helvetica Neue
+monofont: Ricty
+linkcolor: blue
+urlcolor: Red1
+citecolor: Black1
+---
+
+```{r global_options, child = "document_setting.Rmd"}
+```
+
+## 祝
+
+\center{
+  \textbf{\Huge{Tokyo.R\#46}}
+}
+
+## Atnd apiを叩く
+
+
+
+## Check font size
+
+\center{
+  Default 22 pt\\(see line 18 in this file)
+  
+  \begin{itemize}
+    \item \small{small}
+    \item \footnotesize{footnotesize}
+    \item \scriptsize{scriptsize}
+    \item \tiny{tiny}
+  \end{itemize}
+}
+
+## Check font size
+
+\center{
+  Default 22 pt\\(see line 18 in this file)
+  
+  \begin{itemize}
+    \item \Large{Large}, \LARGE{LARGE}
+    \item \huge{huge}, \Huge{Huge}
+  \end{itemize}
+}
