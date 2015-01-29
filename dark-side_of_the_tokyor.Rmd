@@ -52,10 +52,35 @@ citecolor: Black1
 ```{r global_options, child = "document_setting.Rmd"}
 ```
 
+```{r using_pkg}
+library("webshot")
+```
+
+
 ## 祝
 
 \center{
   \textbf{\Huge{Tokyo.R\#46}}
+}
+
+---
+
+\center{
+  \footnotesize{\textcolor{Red1}{（BGMは各自で脳内補完ください）}}\\
+  \scriptsize{遠い昔(2010年1月27日)、小さな島国の都市で...}\\
+  \scriptsize{@yokkuns を中心メンバーとして始まった日本のRコミュニティ...\textcolor{Red1}{Tokyo.R}が産声を上げた。数多の困難（\textcolor{Red1}{知らない}）を乗り越え、途切れることなく続いてきたTokyo.Rは数々の参加者に支えられながら、現在、日本のRコミュニティで\textcolor{Red1}{最も大きく活発なコミュニティ}となっていくのであった...}
+}
+
+---
+
+```{r atnd_tokyor, eval = FALSE}
+webshot(url = "https://atnd.org/events/2746", file = "images/atnd_tokyor.png", cliprect = "viewport")
+```
+
+\center{
+  \colorbox{white}{\includegraphics[scale = 0.3]{images/atnd_tokyor.png}}
+  
+  \small{\faLink \url{https://atnd.org/events/2746}}
 }
 
 ## Atnd apiを叩く
