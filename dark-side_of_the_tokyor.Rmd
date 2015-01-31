@@ -1,9 +1,9 @@
 ---
 # Lab.note package ver. 0.2.11
-title: Tokyo.Rの闇
+title: \fontspec{DOCKER THREE}Tokyo.Rの闇
 subtitle: Tokyo.R#46 LT
-author: \faTwitter @u_ribo
-date: February 21, 2015
+author: \faTwitter \fontspec{DOCKER TWO}@u_ribo
+date: \fontspec{DOCKER TWO}February 21, 2015
 header-includes:
 # define macro
     - \definecolor{Black1}{HTML}{36353B}
@@ -56,11 +56,10 @@ citecolor: Black1
 library("webshot")
 ```
 
-
 ## 祝
 
 \center{
-  \textbf{\Huge{Tokyo.R\#46}}
+  \textbf{\Huge{\fontspec{DOCKER THREE}Tokyo.R\#46}}
 }
 
 ---
