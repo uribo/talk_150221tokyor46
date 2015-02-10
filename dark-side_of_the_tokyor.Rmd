@@ -56,9 +56,7 @@ citecolor: Black1
 library("webshot")
 ```
 
-## 祝
-
-\center{
+## 祝 \fontspec{DejaVu Sans}😄☔👍\center{
   \textbf{\Huge{\fontspec{DOCKER THREE}Tokyo.R\#46}}
 }
 
@@ -84,7 +82,26 @@ webshot(url = "https://atnd.org/events/2746", file = "images/atnd_tokyor.png", c
 
 ## Atnd apiを叩く
 
+選考基準
 
+* 同一IDであること
+    * e.g. `Tokorozawa Yoshio`, `T0kor0zawa Y0shi0` は別ID扱い
+
+## 参加者数の推移
+
+## 参加者の内訳
+
+対象: 去年一年間（#36-#44）
+
+## 最多参加数トップテン
+
+## 最多発表数トップテン
+
+殿堂入り
+
+## これからのTokyo.R
+
+どうするんですか？
 
 ## Check font size
 
