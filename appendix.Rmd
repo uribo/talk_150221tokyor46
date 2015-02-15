@@ -1,0 +1,150 @@
+---
+title: "ATNDで見るTokyo.R"
+author: "Shinya Uryu"
+date: "2015年2月21日"
+output: html_document
+---
+
+```{r using_pkg}
+library("dplyr", warn.conflicts = FALSE)
+library("ggplot2")
+library("rvest")
+library("stringr")
+library("RCurl") # getURL
+library("RJSONIO") # fromJSON ##rjson pkgではNULLをNAとしない
+library("rlist")
+library("DT")
+library("ggthemes")
+# library(extrafont)
+```
+
+```{r setup}
+# theme_set(theme_classic(base_size = 18, base_family = "Helvetica"))
+```
+
+# ATNDに掲載されているTokyo.Rの情報を取得する
+
+```{r get_url, eval = FALSE}
+url <- html("https://atnd.org/events/61553") %>% 
+  html_nodes("#post-body p a") %>% 
+  html_attr("href")
+url <- url[3:47] # 不要なリンクを削除（第1回から第45回までが解析対象）
+# http://atnd.org/events/の部分を削除
+atnd.id <- str_sub(url, 24, 40)
+
+seminar <- html("https://atnd.org/events/61553") %>% 
+  html_nodes("#post-body p a") %>% 
+  html_text()
+seminar <- seminar[3:47]
+# cbind(url, atnd.id) %>% cbind(seminar) %>% 
+#   write.csv("data/tokyor_event.csv", row.names = FALSE)
+```
+
+```{r}
+df <- read.csv("data/tokyor_event.csv", header = TRUE)
+```
+
+```{r, eval=FALSE}
+# ATNDのイベントサーチAPIを叩く
+base.url <- c("http://api.atnd.org/events/")
+p1 <- getURL(paste(base.url, "?event_id=", atnd.id[1], "&format=json", sep = "")) %>% fromJSON(nullValue = NA)
+```
+
+# ATNDの出欠確認APIを叩く
+
+```{r}
+base.url <- c("http://api.atnd.org/events/users/")
+#getURL(paste(base.url, "?event_id=", df$atnd.id[1], sep = ""))
+p1 <- getURL(paste(base.url, "?event_id=", df$atnd.id[1], "&format=json", sep = "")) %>% fromJSON(nullValue = NA)
+# str(p1)
+```
+
+## 参加者の情報を取得
+
+```{r}
+# p2 <- p1$events[[1]]$event$users # 20人分のデータ
+# p2 <- data.frame(matrix(unlist(p2), ncol = 4, byrow = T))
+
+for (i in 1:45) {
+  tmp <- getURL(paste(base.url, "?event_id=", df$atnd.id[i], "&format=json", sep = "")) %>% 
+    fromJSON(nullValue = NA)
+  tmp <- tmp$events[[1]]$event$users
+  tmp <- data.frame(matrix(unlist(tmp), ncol = 4, byrow = T))
+  
+  number <- i
+  tmp <- cbind(number, tmp)
+  assign(paste("df", i, sep = ""), tmp) # データフレームを生成
+}
+
+# うーんこの。もうちょいすまーとな方法があるはず...
+df <- rbind(df1, df2) %>% rbind(df3) %>% rbind(df4) %>% rbind(df5) %>% 
+  rbind(df6) %>% rbind(df7) %>% rbind(df8) %>% rbind(df9) %>% rbind(df10) %>% 
+  rbind(df11) %>% rbind(df12) %>% rbind(df13) %>% rbind(df14) %>% rbind(df15) %>% 
+  rbind(df16) %>% rbind(df17) %>% rbind(df18) %>% rbind(df19) %>% rbind(df20) %>% 
+  rbind(df21) %>% rbind(df22) %>% rbind(df23) %>% rbind(df24) %>% rbind(df25) %>% 
+  rbind(df26) %>% rbind(df27) %>% rbind(df28) %>% rbind(df29) %>% rbind(df30) %>% 
+  rbind(df31) %>% rbind(df32) %>% rbind(df33) %>% rbind(df34) %>% rbind(df35) %>% 
+  rbind(df36) %>% rbind(df37) %>% rbind(df38) %>% rbind(df39) %>% rbind(df40) %>% 
+  rbind(df41) %>% rbind(df42) %>% rbind(df43) %>% rbind(df44) %>% rbind(df45)
+colnames(df) <- c("Number", "ID", "Name", "Twitter", "Status")
+```
+
+## 集計
+
+### 参加回数
+
+```{r, eval=FALSE}
+
+df.participation <- group_by(df) %>% count(Name, sort = TRUE)
+df.participation.tw <- group_by(df) %>% count(Twitter, sort = TRUE) %>% na.omit() %>% 
+  mutate(Name = Twitter)
+
+df <- left_join(df.participation, df.participation.tw, by = "Name")
+
+datatable(df)
+head(df.participation, 20) %>% droplevels() %$%
+  ggplot(., aes(x = reorder(Name, -n), y = n)) + 
+  geom_bar(stat = "identity", fill = "#17CCB7") + 
+  theme(axis.text.x = element_text(size = 12, angle = 50, vjust = 0.5)) + 
+  theme_hc(bgcolor = "darkunica")
+# 1. (28)... yokkuns(tw:yokkuns)
+# 1. (28)... aad34210
+# 3. (25)... bob3(tw:bob3bob3)
+# 4. (23)... teramonagi(tw:teramonagi)
+# 5. (20)... mikado_hito(tw:mikado_hito)
+# 5. (20)... Hiro_macchan(tw:Hiro_macchan)
+# 7. (19)... manozo(tw:manozo)
+# 7. (19)... atg
+# 7. (19)... soultoru(tw:soultoru)
+# 10. (18)... holidayworking(tw:holidayworking)
+#ggplot(join.rank, aes(y = reorder(Name, n), x = n)) + geom_point(size = join.rank$n / 2)
+
+# Name2 <- c("yokkuns", "aad34210", "bob3", "teramonagi", "mikado_hito", "Hiro_macchan", 
+#            "manozo", "atg", "soultoru", "holidayworking", "tetsuroito", "Prunus1350",
+#            "teru3teru6", "kos59125", "otanet123", "sanoche16", "gepuro", "mitz321",
+#            "azu-azu", "Y.Tokorosawa")
+
+qplot(x = n, data = df.participation, geom="histogram")
+
+ggplot(df.participation, aes(x = factor(1), fill = factor(n))) +
+ geom_bar(width = 1) +
+  coord_polar(theta = "y")
+group_by(df) %>% count(Twitter, sort = TRUE) %>% na.omit()
+# https://atnd.org/users/5923
+#summarise(df, tot = n(ID))
+#d <- table(df$ID)
+```
+
+```{r call_api_from_json}
+# JSON形式でATND apiを叩く
+atnd <- getURL("http://api.atnd.org/events/?keyword=回R勉強会&owner_id=5923&owner_id=132547&owner_id=17358&count=51&format=json") %>%
+  fromJSON()
+str(atnd$events[1]) # リストの扱いわからん
+```
+
+## 参考
+
+* [ATND API リファレンス](http://api.atnd.org/)
+* [SASでATND APIからデータを取得する - Qiita](http://qiita.com/Prunus1350/items/fc58808a45b00bc0e25d)
+* [政府統計の総合窓口(e-Stat)のAPIを使ってみよう [R編] - Qiita](http://qiita.com/R_Linux/items/e22d1ec28ab653f01f75)
+* [rjsonではNULLデータをNAとして扱ってくれないらしい - 農業をITから考える頁](http://mi2yo4.blog136.fc2.com/blog-entry-81.html)
