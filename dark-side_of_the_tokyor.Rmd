@@ -25,7 +25,7 @@ header-includes:
     - \setbeamercolor{background canvas}{bg = Black1}
     - \setbeamertemplate{navigation symbols}{}
     - \setbeamertemplate{itemize items}{\textcolor{Blue2}{\faCaretRight}}
-    - \setbeamerfont{title}{size = \fontsize{38}{10}}
+    - \setbeamerfont{title}{size = \fontsize{48}{10}}
     - \setbeamercolor{title}{fg = Blue2}
     - \setbeamerfont{subtitle}{size = \large}
     - \setbeamercolor{subtitle}{fg = Blue1}
@@ -52,12 +52,22 @@ citecolor: Black1
 ```{r global_options, child = "document_setting.Rmd"}
 ```
 
+## 自己紹介
+
+* 闇の大学院生(Yokohamaｶﾗｷﾏｽﾀ)
+* R歴... ５年目？（ほとんど初心者）
+    * Rの師匠
+        * 昔: @nozma, Tsukuba.Rのみなさん
+        * 今: @hadleywickham, @xieyihui, pipeR三銃士
+        * 最近: @yutannihilation, @kos59125
+        
+
 ```{r using_pkg}
 library("webshot")
 ```
 
-## 祝 \fontspec{DejaVu Sans}😄☔👍\center{
-  \textbf{\Huge{\fontspec{DOCKER THREE}Tokyo.R\#46}}
+## \center{
+  祝\textbf{{\fontspec{DOCKER THREE}Tokyo.R\#46}}
 }
 
 ---
@@ -74,18 +84,35 @@ library("webshot")
 webshot(url = "https://atnd.org/events/2746", file = "images/atnd_tokyor.png", cliprect = "viewport")
 ```
 
-\center{
-  \colorbox{white}{\includegraphics[scale = 0.3]{images/atnd_tokyor.png}}
-  
-  \small{\faLink \url{https://atnd.org/events/2746}}
-}
+![](images/atnd_tokyor.png)
+
+\faLink \url{https://atnd.org/events/2746}
+
+---
+
+そんなわけで過去のTokyo.Rを振り返り！
+
+---
+
+なんてことがしたい人生だった
+
+```{r, eval=FALSE}
+webshot("https://twitter.com/u_ribo/status/566851435392811008", "test150201.png", 
+        selector = "#page-container")
+# https://twitter.com/yamano357/status/566860122928861184
+```
+
+![](test150201.png)
+
+
+---
 
 ## Atnd apiを叩く
 
 選考基準
 
 * 同一IDであること
-    * e.g. `Tokorozawa Yoshio`, `T0kor0zawa Y0shi0` は別ID扱い
+    * e.g. `Tokorosawa Yoshio`, `所沢義男` は別ID扱い（ごめんね :b）
 
 ## 参加者数の推移
 
@@ -95,13 +122,42 @@ webshot(url = "https://atnd.org/events/2746", file = "images/atnd_tokyor.png", c
 
 ## 最多参加数トップテン
 
+1. (28)... yokkuns(tw:yokkuns)
+1. (28)... aad34210
+3. (25)... bob3(tw:bob3bob3)
+4. (23)... teramonagi(tw:teramonagi)
+5. (20)... mikado_hito(tw:mikado_hito)
+5. (20)... Hiro_macchan(tw:Hiro_macchan)
+7. (19)... manozo(tw:manozo)
+7. (19)... atg
+7. (19)... soultoru(tw:soultoru)
+10. (18)... holidayworking(tw:holidayworking)
+
 ## 最多発表数トップテン
 
 殿堂入り
 
+## ん？
+
+参加回数１回の人多くね？？
+
+https://twitter.com/u_ribo/status/550872628420804608
+
+Tokyo.R = 敷居が高いイメージ
+
 ## これからのTokyo.R
 
 どうするんですか？
+
+GitHubにリポジトリ作るとか
+
+初心者セッション -> 都度変更点を修正するだけで良い！
+
+もっと世界に目を向けてみるとか
+
+頑張れ英語勢
+
+R-Bloggers
 
 ## Check font size
 
