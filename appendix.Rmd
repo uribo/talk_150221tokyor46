@@ -8,6 +8,7 @@ output: html_document
 ```{r using_pkg}
 library("dplyr", warn.conflicts = FALSE)
 library("ggplot2")
+library("gridExtra")
 library("rvest")
 library("stringr")
 library("RCurl") # getURL
@@ -24,7 +25,7 @@ library("ggthemes")
 
 # ATNDに掲載されているTokyo.Rの情報を取得する
 
-```{r get_url, eval = FALSE}
+```{r gen_get_url, eval=FALSE}
 url <- html("https://atnd.org/events/61553") %>% 
   html_nodes("#post-body p a") %>% 
   html_attr("href")
@@ -40,7 +41,7 @@ seminar <- seminar[3:47]
 #   write.csv("data/tokyor_event.csv", row.names = FALSE)
 ```
 
-```{r}
+```{r SETUP_EVENT_DATA}
 df <- read.csv("data/tokyor_event.csv", header = TRUE)
 ```
 
@@ -50,18 +51,13 @@ base.url <- c("http://api.atnd.org/events/")
 p1 <- getURL(paste(base.url, "?event_id=", atnd.id[1], "&format=json", sep = "")) %>% fromJSON(nullValue = NA)
 ```
 
-# ATNDの出欠確認APIを叩く
+# ATNDの出欠確認APIを叩いて参加者の情報を取得
 
-```{r}
+```{r SETUP_ENTRY_DATA}
 base.url <- c("http://api.atnd.org/events/users/")
 #getURL(paste(base.url, "?event_id=", df$atnd.id[1], sep = ""))
-p1 <- getURL(paste(base.url, "?event_id=", df$atnd.id[1], "&format=json", sep = "")) %>% fromJSON(nullValue = NA)
+# p1 <- getURL(paste(base.url, "?event_id=", df$atnd.id[1], "&format=json", sep = "")) %>% fromJSON(nullValue = NA)
 # str(p1)
-```
-
-## 参加者の情報を取得
-
-```{r}
 # p2 <- p1$events[[1]]$event$users # 20人分のデータ
 # p2 <- data.frame(matrix(unlist(p2), ncol = 4, byrow = T))
 
@@ -86,27 +82,49 @@ df <- rbind(df1, df2) %>% rbind(df3) %>% rbind(df4) %>% rbind(df5) %>%
   rbind(df31) %>% rbind(df32) %>% rbind(df33) %>% rbind(df34) %>% rbind(df35) %>% 
   rbind(df36) %>% rbind(df37) %>% rbind(df38) %>% rbind(df39) %>% rbind(df40) %>% 
   rbind(df41) %>% rbind(df42) %>% rbind(df43) %>% rbind(df44) %>% rbind(df45)
+
 colnames(df) <- c("Number", "ID", "Name", "Twitter", "Status")
+# Number... 第X回
+# ID... ATND ID
+# Name... ATNDでのユーザー名
+# Twitter... Twitterのユーザー名
+# Status... 0 -> 欠席、1 -> 出席
 ```
 
-## 集計
+## 参加回数での順位
 
-### 参加回数
-
-```{r, eval=FALSE}
-
+```{r}
 df.participation <- group_by(df) %>% count(Name, sort = TRUE)
 df.participation.tw <- group_by(df) %>% count(Twitter, sort = TRUE) %>% na.omit() %>% 
   mutate(Name = Twitter)
-
 df <- left_join(df.participation, df.participation.tw, by = "Name")
+colnames(df) <- c("Name", "Entry", "Twitter", "Entry from Twitter")
+```
 
-datatable(df)
-head(df.participation, 20) %>% droplevels() %$%
+```{r, fig.width = 10, fig.align = 'center', eval=TRUE}
+p1 <- head(df.participation, 20) %>% droplevels() %$%
+  ggplot(., aes(x = reorder(Name, -n), y = n)) + 
+  geom_bar(stat = "identity", fill = "#F7417A") + 
+  geom_text(aes(label = n), colour = "#FFFFFF", vjust = -0.6) +
+  theme(axis.text.x = element_text(size = 12, angle = 50, vjust = 0.5)) + 
+  xlab("ATND user name") + ylab("Entry") + ggtitle("Top 20 ATND user \n joined in Tokyo.R") +
+  scale_y_continuous(limits = c(0, 30)) +
+  theme_hc(bgcolor = "darkunica")
+
+p2 <- head(df.participation.tw, 20) %>% droplevels() %$%
   ggplot(., aes(x = reorder(Name, -n), y = n)) + 
   geom_bar(stat = "identity", fill = "#17CCB7") + 
+  geom_text(aes(label = n), colour = "#FFFFFF", vjust = -0.6) +
   theme(axis.text.x = element_text(size = 12, angle = 50, vjust = 0.5)) + 
+  xlab("Twitter user name") + ylab("Entry") + ggtitle("Top 20 Twitter user \n joined in Tokyo.R") +
+  scale_y_continuous(limits = c(0, 30)) +
   theme_hc(bgcolor = "darkunica")
+grid.arrange(p1, p2, ncol = 2)
+```
+
+> ATND内で複数のユーザー名を使っている場合もそれぞれ別ユーザーとして算出。ほとんど違いはない
+
+```{r, eval=FALSE, echo=FALSE}
 # 1. (28)... yokkuns(tw:yokkuns)
 # 1. (28)... aad34210
 # 3. (25)... bob3(tw:bob3bob3)
@@ -124,18 +142,32 @@ head(df.participation, 20) %>% droplevels() %$%
 #            "teru3teru6", "kos59125", "otanet123", "sanoche16", "gepuro", "mitz321",
 #            "azu-azu", "Y.Tokorosawa")
 
-qplot(x = n, data = df.participation, geom="histogram")
-
-ggplot(df.participation, aes(x = factor(1), fill = factor(n))) +
- geom_bar(width = 1) +
-  coord_polar(theta = "y")
-group_by(df) %>% count(Twitter, sort = TRUE) %>% na.omit()
+# ggplot(df.participation, aes(x = factor(1), fill = factor(n))) + geom_hist()
+#  geom_bar(width = 1) +
+#   coord_polar(theta = "y")
+# group_by(df) %>% count(Twitter, sort = TRUE) %>% na.omit()
 # https://atnd.org/users/5923
 #summarise(df, tot = n(ID))
 #d <- table(df$ID)
 ```
 
-```{r call_api_from_json}
+### 詳細はこちら
+
+> Searchにユーザー名を入れて、気になる人の参加回数を表示できます
+
+```{r}
+datatable(df)
+```
+
+## 参加者における参加回数のヒストグラム
+
+```{r, fig.align = 'center'}
+ggplot(df.participation, aes(x = n)) + geom_histogram(binwidth = 1, fill = "#17CCB7") +
+  theme_hc(bgcolor = "darkunica")
+```
+
+
+```{r call_api_from_json, eval=FALSE}
 # JSON形式でATND apiを叩く
 atnd <- getURL("http://api.atnd.org/events/?keyword=回R勉強会&owner_id=5923&owner_id=132547&owner_id=17358&count=51&format=json") %>%
   fromJSON()
