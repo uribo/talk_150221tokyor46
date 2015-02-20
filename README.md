@@ -21,7 +21,7 @@ get_pal(url = "https://dribbble.com/shots/1899538-Luna", show = FALSE)
 ## リンク
 
 * [atnd](https://atnd.org/events/61553)
-* [勉強会発表内容一覧 Tokro.R](http://lab.sakaue.info/wiki.cgi/JapanR2010?page=%CA%D9%B6%AF%B2%F1%C8%AF%C9%BD%C6%E2%CD%C6%B0%EC%CD%F7#p15)... 第１回から第35回（20131109）まで
+* [勉強会発表内容一覧 Tokyo.R](http://lab.sakaue.info/wiki.cgi/JapanR2010?page=%CA%D9%B6%AF%B2%F1%C8%AF%C9%BD%C6%E2%CD%C6%B0%EC%CD%F7#p15)... 第１回から第35回（20131109）まで
 * http://www.rpubs.com/dichika/rank2014
 * http://www.slideshare.net/dichika/tokyor17-9449827
 * http://www.trifields.jp/r-slideshare-list-887
