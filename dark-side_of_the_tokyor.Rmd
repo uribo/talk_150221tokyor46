@@ -1,21 +1,20 @@
 ---
 # Lab.note package ver. 0.2.11
-title: \fontspec{DOCKER THREE}Tokyo.Rの闇
+title: \fontspec{DOCKER ONE}Japan\textcolor{Red1}{.R} \newline 補完計画
 subtitle: Tokyo.R#46 LT
-author: \faTwitter \fontspec{DOCKER TWO}@u_ribo
+author: \faTwitter \fontspec{DOCKER ONE}@u_ribo\vspace{-1cm}
 date: \fontspec{DOCKER TWO}February 21, 2015
 header-includes:
 # define macro
     - \definecolor{Black1}{HTML}{36353B}
     - \definecolor{White1}{RGB}{255, 255, 250}
-    - \definecolor{Blue1}{HTML}{5FB8FC}
-    - \definecolor{Blue2}{HTML}{29F6E7}
+    - \definecolor{Blue1}{HTML}{5FB8FC} \definecolor{Blue2}{HTML}{29F6E7}
     - \definecolor{Green1}{HTML}{17CCB7}
     - \definecolor{Yellow1}{HTML}{FEE08C}
     - \definecolor{Red1}{HTML}{F7417A}
 # using package, setup
     - \usepackage{zxjatype}
-    - \setjamainfont{Hiragino Kaku Gothic Pro}
+    - \setjamainfont{YuGo-Medium}
     - \usepackage{fontspec, fontawesome} # require installed FontAwesome
     - \usepackage{scrextend}
     - \changefontsizes{22pt}
@@ -24,16 +23,16 @@ header-includes:
 # set beamer theme
     - \setbeamercolor{background canvas}{bg = Black1}
     - \setbeamertemplate{navigation symbols}{}
-    - \setbeamertemplate{itemize items}{\textcolor{Blue2}{\faCaretRight}}
-    - \setbeamerfont{title}{size = \fontsize{48}{10}}
-    - \setbeamercolor{title}{fg = Blue2}
+    - \setbeamertemplate{itemize items}{\textcolor{Blue1}{\faCaretRight}}
+    - \setbeamerfont{title}{size = \fontsize{46}{8}}
+    - \setbeamercolor{title}{fg = White1}
     - \setbeamerfont{subtitle}{size = \large}
     - \setbeamercolor{subtitle}{fg = Blue1}
-    - \setbeamercolor{author}{fg = Green1}
+    - \setbeamercolor{author}{fg = Blue1}
     - \setbeamercolor{normal text}{fg = Yellow1}
-    - \setbeamerfont{date}{series = \itshape}
-    - \setbeamercolor{date}{fg = Red1}
-    - \setbeamercolor{frametitle}{fg = Blue2}
+    - \setbeamerfont{date}{series = \itshape, size = \small}
+    - \setbeamercolor{date}{fg = White1}
+    - \setbeamercolor{frametitle}{fg = Blue1}
 # new command
     - \renewcommand{\baselinestretch}{1.0}
 output:
@@ -42,7 +41,7 @@ output:
     keep_tex: false
     pandoc_args:
      ["--latex-engine=xelatex"]
-mainfont: Helvetica Neue
+mainfont: DOCKER ONE
 monofont: Ricty
 linkcolor: blue
 urlcolor: Red1
@@ -52,139 +51,114 @@ citecolor: Black1
 ```{r global_options, child = "document_setting.Rmd"}
 ```
 
-## 自己紹介
-
-* 闇の大学院生(Yokohamaｶﾗｷﾏｽﾀ)
-* R歴... ５年目？（ほとんど初心者）
-    * Rの師匠
-        * 昔: @nozma, Tsukuba.Rのみなさん
-        * 今: @hadleywickham, @xieyihui, pipeR三銃士
-        * 最近: @yutannihilation, @kos59125
-        
-
 ```{r using_pkg}
 library("webshot")
 ```
 
-## \center{
-  祝\textbf{{\fontspec{DOCKER THREE}Tokyo.R\#46}}
-}
-
 ---
 
-\center{
-  \footnotesize{\textcolor{Red1}{（BGMは各自で脳内補完ください）}}\\
-  \scriptsize{遠い昔(2010年1月27日)、小さな島国の都市で...}\\
-  \scriptsize{@yokkuns を中心メンバーとして始まった日本のRコミュニティ...\textcolor{Red1}{Tokyo.R}が産声を上げた。数多の困難（\textcolor{Red1}{知らない}）を乗り越え、途切れることなく続いてきたTokyo.Rは数々の参加者に支えられながら、現在、日本のRコミュニティで\textcolor{Red1}{最も大きく活発なコミュニティ}となっていくのであった...}
-}
-
----
+\center{\LARGE{\textbf{祝 {\fontspec{DOCKER ONE}Tokyo.R\#46}}}}
 
 ```{r atnd_tokyor, eval = FALSE}
 webshot(url = "https://atnd.org/events/2746", file = "images/atnd_tokyor.png", cliprect = "viewport")
+# pixelmatorで背景を白で塗りつぶし
 ```
 
 ![](images/atnd_tokyor.png)
 
-\faLink \url{https://atnd.org/events/2746}
+\tiny{\faLink \url{https://atnd.org/events/2746}}
 
 ---
 
-そんなわけで過去のTokyo.Rを振り返り！
+* Tokyo.Rの情報は\textbf{すべてATNDに掲載されている}
+* \textbf{ATND API}を叩けば、イベント情報を取得できる
+
+\center{\large{\faArrowRight 過去のTokyo.Rを振り返り！}}
 
 ---
 
-なんてことがしたい人生だった
-
-```{r, eval=FALSE}
-webshot("https://twitter.com/u_ribo/status/566851435392811008", "test150201.png", 
-        selector = "#page-container")
-# https://twitter.com/yamano357/status/566860122928861184
+```{r, eval = FALSE}
+webshot("https://twitter.com/u_ribo/status/566851435392811008", "images/tweet_uribo.png", selector = ".expansion-container")
 ```
 
-![](test150201.png)
+![](images/tweet_uribo.png)
 
+\tiny{\url{https://twitter.com/u_ribo/status/566851435392811008}}
 
 ---
 
-## Atnd apiを叩く
+```{r, eval=FALSE}
+webshot("https://twitter.com/yamano357/status/566860122928861184", "images/tweet_mention_yamano357.png", selector = ".expansion-container")
+```
 
-選考基準
+![](images/tweet_mention_yamano357.png)
 
-* 同一IDであること
-    * e.g. `Tokorosawa Yoshio`, `所沢義男` は別ID扱い（ごめんね :b）
+\tiny{\url{https://twitter.com/yamano357/status/566860122928861184}}
 
-## 参加者数の推移
+---
 
-## 参加者の内訳
+\center{\large{ATND API を叩いて過去のTokyo.Rを振り返り！}}
 
-対象: 去年一年間（#36-#44）
+![](images/tweet_uribo.png)
 
-## 最多参加数トップテン
+---
 
-1. (28)... yokkuns(tw:yokkuns)
-1. (28)... aad34210
-3. (25)... bob3(tw:bob3bob3)
-4. (23)... teramonagi(tw:teramonagi)
-5. (20)... mikado_hito(tw:mikado_hito)
-5. (20)... Hiro_macchan(tw:Hiro_macchan)
-7. (19)... manozo(tw:manozo)
-7. (19)... atg
-7. (19)... soultoru(tw:soultoru)
-10. (18)... holidayworking(tw:holidayworking)
+\center{\textbf{\textcolor{White1}{\fontsize{46}{8}{そんなことが \newpage したい人生だった}}}}
 
-## 最多発表数トップテン
+---
 
-殿堂入り
+同様の発表や記事、調べたら\textbf{たくさん}あった。
 
-## ん？
+---
 
-参加回数１回の人多くね？？
+\center{\Huge{\fontspec{DOCKER ONE}\textcolor{White1}{\#Tsurami}}}
 
-https://twitter.com/u_ribo/status/550872628420804608
+... 勉強会でのネタ被り
 
-Tokyo.R = 敷居が高いイメージ
+---
 
-## これからのTokyo.R
+ぼく「既存の内容に関して、調べが足りませんでした」
 
-どうするんですか？
+???「そうだな。しかし\textbf{\textcolor{White1}{情報が集約されていないのが悪い}}」
 
-GitHubにリポジトリ作るとか
+ぼく「...集約されていないのが悪い」
 
-初心者セッション -> 都度変更点を修正するだけで良い！
+---
 
-もっと世界に目を向けてみるとか
+\Huge{\textbf{\fontspec{DOCKER ONE}\textcolor{White1}{Japan}\textcolor{Red1}{.R} \newline \textcolor{White1}{補完計画}}}
 
-頑張れ英語勢
+---
 
-R-Bloggers
+第一次中間報告
+
+* **全国のRコミュニティ**の活動をまとめたGitHubリポジトリを作成
+* **発表内容をデータセット**に集約した
+* **Rパッケージ**として開発中
+
+---
+
+\center{\Huge{\fontspec{DOCKER ONE}\textcolor{White1}{DEMO}}}
+
+\faArrowRight \url{https://github.com/uribo/Japan.useR}
+
+---
 
 ## 謝辞
 
-Tokyo.Rをはじめ各地のRコミュニケーション運営に関わる皆さま
+Tokyo.Rをはじめ、各地のRコミュニケーション運営に関わる皆さま、発表者、参加者の皆さま
 
-R勉強会、コミュニティの発表をまとめてくださる方（Special Thanks）
+R勉強会、コミュニティの発表をまとめてくださる方々
 
-## Check font size
+（Special Thanks）
 
-\center{
-  Default 22 pt\\(see line 18 in this file)
-  
-  \begin{itemize}
-    \item \small{small}
-    \item \footnotesize{footnotesize}
-    \item \scriptsize{scriptsize}
-    \item \tiny{tiny}
-  \end{itemize}
-}
+---
 
-## Check font size
+\center{\Huge{\textcolor{White1}{次回予告}}}
 
-\center{
-  Default 22 pt\\(see line 18 in this file)
-  
-  \begin{itemize}
-    \item \Large{Large}, \LARGE{LARGE}
-    \item \huge{huge}, \Huge{Huge}
-  \end{itemize}
-}
+---
+
+## あなたのRプログラミングの「ｼｼｮｰ」は誰ですか
+
+* 昔: @nozma, `Tsukuba.R`の皆さん
+* 今: @hadleywickham, @xieyihui, pipeR三銃士
+* 最近: @yutannihilation
