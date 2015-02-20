@@ -159,6 +159,12 @@ GitHubにリポジトリ作るとか
 
 R-Bloggers
 
+## 謝辞
+
+Tokyo.Rをはじめ各地のRコミュニケーション運営に関わる皆さま
+
+R勉強会、コミュニティの発表をまとめてくださる方（Special Thanks）
+
 ## Check font size
 
 \center{
