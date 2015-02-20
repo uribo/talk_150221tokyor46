@@ -16,11 +16,6 @@ library("RJSONIO") # fromJSON ##rjson pkgではNULLをNAとしない
 library("rlist")
 library("DT")
 library("ggthemes")
-# library(extrafont)
-```
-
-```{r setup}
-# theme_set(theme_classic(base_size = 18, base_family = "Helvetica"))
 ```
 
 # ATNDに掲載されているTokyo.Rの情報を取得する
@@ -84,6 +79,7 @@ df <- rbind(df1, df2) %>% rbind(df3) %>% rbind(df4) %>% rbind(df5) %>%
   rbind(df41) %>% rbind(df42) %>% rbind(df43) %>% rbind(df44) %>% rbind(df45)
 
 colnames(df) <- c("Number", "ID", "Name", "Twitter", "Status")
+# write.csv(df, "data/tokyor_user.csv", row.names = FALSE)
 # Number... 第X回
 # ID... ATND ID
 # Name... ATNDでのユーザー名
@@ -124,33 +120,6 @@ grid.arrange(p1, p2, ncol = 2)
 
 > ATND内で複数のユーザー名を使っている場合もそれぞれ別ユーザーとして算出。ほとんど違いはない
 
-```{r, eval=FALSE, echo=FALSE}
-# 1. (28)... yokkuns(tw:yokkuns)
-# 1. (28)... aad34210
-# 3. (25)... bob3(tw:bob3bob3)
-# 4. (23)... teramonagi(tw:teramonagi)
-# 5. (20)... mikado_hito(tw:mikado_hito)
-# 5. (20)... Hiro_macchan(tw:Hiro_macchan)
-# 7. (19)... manozo(tw:manozo)
-# 7. (19)... atg
-# 7. (19)... soultoru(tw:soultoru)
-# 10. (18)... holidayworking(tw:holidayworking)
-#ggplot(join.rank, aes(y = reorder(Name, n), x = n)) + geom_point(size = join.rank$n / 2)
-
-# Name2 <- c("yokkuns", "aad34210", "bob3", "teramonagi", "mikado_hito", "Hiro_macchan", 
-#            "manozo", "atg", "soultoru", "holidayworking", "tetsuroito", "Prunus1350",
-#            "teru3teru6", "kos59125", "otanet123", "sanoche16", "gepuro", "mitz321",
-#            "azu-azu", "Y.Tokorosawa")
-
-# ggplot(df.participation, aes(x = factor(1), fill = factor(n))) + geom_hist()
-#  geom_bar(width = 1) +
-#   coord_polar(theta = "y")
-# group_by(df) %>% count(Twitter, sort = TRUE) %>% na.omit()
-# https://atnd.org/users/5923
-#summarise(df, tot = n(ID))
-#d <- table(df$ID)
-```
-
 ### 詳細はこちら
 
 > Searchにユーザー名を入れて、気になる人の参加回数を表示できます
@@ -166,13 +135,7 @@ ggplot(df.participation, aes(x = n)) + geom_histogram(binwidth = 1, fill = "#17C
   theme_hc(bgcolor = "darkunica")
 ```
 
-
-```{r call_api_from_json, eval=FALSE}
-# JSON形式でATND apiを叩く
-atnd <- getURL("http://api.atnd.org/events/?keyword=回R勉強会&owner_id=5923&owner_id=132547&owner_id=17358&count=51&format=json") %>%
-  fromJSON()
-str(atnd$events[1]) # リストの扱いわからん
-```
+> 圧倒的初参加！！
 
 ## 参考
 

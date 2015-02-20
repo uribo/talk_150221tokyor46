@@ -1,0 +1,406 @@
+Number,Session,Speaker,Title,Slide,Community
+1,1,yokkuns,Rの基礎(Rとは、データ構造、データの入出力、データの視覚化),NA,Tokyo.R
+1,2,yokkuns,統計学の基礎(記述統計/推定/検定),slideshare,Tokyo.R
+1,3,akiaki5516,NA,NA,Tokyo.R
+2,1,wakuteka,RとDBMS,slideshare,Tokyo.R
+2,2,Nikoriks,25年前のS事情,slideshare,Tokyo.R
+2,3,yokkuns,統計的仮説検定、2つの平均値の比較,slideshare,Tokyo.R
+3,1,hamadakoichi,R言語による時系列分析,slideshare,Tokyo.R
+3,2,yokkuns,分散分析,pdf,Tokyo.R
+3,3,syou6162,Optimization in R,slideshare,Tokyo.R
+3,4,hamadakoichi,プロセス、リソース、グラフと統計解析,slideshare,Tokyo.R
+3,5,doradora09,RFinanceYJを使ってみた,ppt,Tokyo.R
+3,6,wakuteka,RとDBMS,slideshare,Tokyo.R
+4,1,yokkuns,RとWeb API,slideshare,Tokyo.R
+4,2,yokkuns,Rによるやさしい統計学10章～14章 ,slideshare,Tokyo.R
+4,3,hotoku,Rでカルマンフィルタ,NA,Tokyo.R
+4,4,yanashi,財布にやさしいRを使ったデータマイニング,slideshare,Tokyo.R
+4,5,takanobu_mizuta,Value at Risk の紹介,slideshare,Tokyo.R
+5,1,masafumisano,Y！ファイナンス非公式ガイド（仮）,NA,Tokyo.R
+5,2,yokkuns,10分で分かるRパッケージの作り方,sildeshare,Tokyo.R
+5,3,doradora09,Rによるやさしい統計学 : 第15章 回帰分析,NA,Tokyo.R
+5,4,oshiro40,人口統計データの分析手法,slideshare,Tokyo.R
+6,1,yokkuns,10分で分かるRパッケージの作り方,slideshare ,Tokyo.R
+6,2,holidayworking,Rによるやさしい統計学 第16章 : 因子分析,slideshare,Tokyo.R
+6,3,dichika,ggplot2できれいなグラフ,slideshare,Tokyo.R
+6,4,teramonagi,Rで学ぶ金融工学入門　～現代ポートフォリオ理論編～,slideshare,Tokyo.R
+6,5,halamy,金融工学入門 ～Rで確率微分方程式～,NA,Tokyo.R
+6,6,masafumisano,Y！ファイナンス非公式ガイド（仮）,NA,Tokyo.R
+7,1,bob3bob3,Rによるやさしい統計学 第17章 : 共分散構造分析,slideshare,Tokyo.R
+7,2,yanashi,PythonとR,NA,Tokyo.R
+7,3,tyatsuta,R Language Definition案内～Rでハマったときのために～,slideshare,Tokyo.R
+7,4,mangantempy,Rで麻雀,slideshare,Tokyo.R
+7,5,sfchaos,RとC、C++の連携,slideshare,Tokyo.R
+7,6,yokkuns,10分で分かるRパッケージの作り方,slideshare ,Tokyo.R
+8,1,yokkuns,Rによるデータサイエンス第Ⅱ部 第3章 対応分析,slideshare,Tokyo.R
+8,2,bob3bob3,ブランド・ポジショニングの分析,slideshare,Tokyo.R
+8,3,holidayworking,RでMapReduce,slideshare,Tokyo.R
+8,4,Nikoriks,Rのハラワタをちょっと見てみる,slideshare,Tokyo.R
+8,5,aad34210,Rの海外サイトのご紹介（仮）,slideshare,Tokyo.R
+9,1,tyatsuta,Rの失敗？環境と変数代入と遅延評価と～R Language Definition案内番外編～,slideshare,Tokyo.R
+9,2,yokkuns,Rによるデータサイエンス第Ⅱ部 第4章 多次元尺度法,slideshare,Tokyo.R
+9,3,nokuno,Rによる文書モデルの可視化　～トピックモデル、ディリクレ分布、LDA,slideshare,Tokyo.R
+9,4,aad34210,RExcelでの日本語利用,参考(Japan.Rの資料),Tokyo.R
+9,5,teramonagi,スマートに時系列を捌く方法,slideshare,Tokyo.R
+10,1,hnz,Rによるデータサイエンス第Ⅱ部 第5章 クラスター分析,slideshare,Tokyo.R
+10,2,manozo,スマートに時系列を捌く方法 2,NA,Tokyo.R
+10,3,ito_yan,基本パッケージの描画機能について,slideshare,Tokyo.R
+10,4,yokkuns,Japan.Rについて,NA,Tokyo.R
+10,5,teramonagi,マルコフ連鎖モンテカルロ法入門-1,slideshare,Tokyo.R
+11,1,bob3bob3,Rによるデータサイエンス第Ⅱ部 第6章 自己組織化マップ,slideshare,Tokyo.R
+11,2,aad34210,ggplot2：パッケージ製作者（Wickamさん）の話を聞いて,slideshare,Tokyo.R
+11,3,dichika,caretパッケージの紹介,slideshare,Tokyo.R
+11,4,sfchaos,RにおけるHPC 並列計算編,slideshare,Tokyo.R
+11,5,AntiBayesian,Rで始めるテキストマイニング,pdf,Tokyo.R
+11,6,hamadakoichi,R言語による Random Forest 徹底入門,slideshare,Tokyo.R
+12,1,yokkuns,Rによる回帰分析入門,slideshare,Tokyo.R
+12,2,sleipnir002,Rで学ぶデータサイエンス 5パターン認識 1章 判別能力の評価 2,slideshare,Tokyo.R
+12,3,teramonagi,Rで学ぶ回帰分析と単位根検定,slideshare,Tokyo.R
+12,4,aad34210,RをSQLで操る,slideshare,Tokyo.R
+12,5,sfchaos,Rあんな時こんな時　～いつか役立つ(かもしれない)Tips～,slideshare,Tokyo.R
+12,6,dichika,世界のR(仮),slideshare,Tokyo.R
+13,1,isseing333,線形判別分析,slideshare,Tokyo.R
+13,2,kos59125,R と .NET Framework,GoogleDocs,Tokyo.R
+13,3,sfchaos,Rで学ぶロバスト推定,slideshare,Tokyo.R
+13,4,酒井,Rで地理空間分析,NA,Tokyo.R
+13,5,yokkuns,YjdnJlpの紹介とか,slideshare,Tokyo.R
+13,6,mokjpn,Rパッケージガイドブックの紹介,NA,Tokyo.R
+14,1,suima8,非線形判別の勉強をしてみました,NA,Tokyo.R
+14,2,holidayworking,Rが黄色い象に出会った,slideshare,Tokyo.R
+14,3,sleipnir002,Rで学ぶデータサイエンス5 パターン認識 2章 K-平均法,slideshare,Tokyo.R
+14,4,_kohta,Rでisomap,slideshare,Tokyo.R
+14,5,mangantempy,Rのコードをキレイに見せたい,slideshare,Tokyo.R
+14,6,gepuro,QC7つ道具,slideshare,Tokyo.R
+14,7,isseing333,大規模データマイニングでのモデル探索手法：K-sample plot,slideshare,Tokyo.R
+14,8,yokkuns,R言語でユニットテスト,slideshare,Tokyo.R
+15,1,doradora09,テキスト第11章 生存分析,slideshare,Tokyo.R
+15,2,sleipnir002,Rで学ぶデータサイエンス　第4章　混合正規分布モデル,slideshare,Tokyo.R
+15,3,teramonagi,xtsパッケージで時系列解析,slideshare,Tokyo.R
+15,4,yokkuns,Rによる異常検知入門（仮）,slideshare,Tokyo.R
+15,5,dichika,シリーズRで可視化#1 ggplot2とgoogleVisとhwriterでレポートを作る,slideshare,Tokyo.R
+15,6,manozo,Rで自分で料理 ～tsクラスとか～,slideshare,Tokyo.R
+15,7,AntiBayes,あんちべのすべらない話 ～俺のツイートがこんなにウケないはずがない～,slideshare,Tokyo.R
+16,1,sleipnir002,Rで学ぶデータサイエンス5パターン認識　8/9章 k-近傍法、学習ベクトル量子化,slideshare,Tokyo.R
+16,2,Hiro_macchan,Rを用いた地理的情報解析,slideshare,Tokyo.R
+16,3,a_bicky,Rデバッグあれこれ,slideshare,Tokyo.R
+16,4,ito_yan,Rで実験計画法,slideshare,Tokyo.R
+16,5,tyatsuta,DICEWARS by R,slideshare,Tokyo.R
+16,6,wdkz,Rで大規模データ解析,slideshare,Tokyo.R
+16,7,dichika,シリーズRで可視化#2 インフォグラフはじめました,slideshare,Tokyo.R
+16,8,yokkuns,異常行動検出入門 – 行動データ時系列のデータマイニング,slideshare,Tokyo.R
+17,1,teramonagi,Rによるデータサイエンス第12章「時系列」,slideshare,Tokyo.R
+17,2,holidayworking,Rで解く最適化問題 – 線型計画問題編 –,slideshare,Tokyo.R
+17,3,kos59125,近似ベイズ計算でカジュアルなベイズ推定,slideshare,Tokyo.R
+17,4,yokkuns,Rで学ぶ傾向スコア解析入門 ,slideshare,Tokyo.R
+17,5,mangantempy,サーバ異常検知入門 ,slideshare,Tokyo.R
+17,6,yuuukiooi,Rによる計量経済学入門,slideshare,Tokyo.R
+17,7,dichika,TokyoRの軌跡,slideshare,Tokyo.R
+17,8,tsutatsuta,Rで富士山を描いてみた,slideshare,Tokyo.R
+17,9,wakuteka,Tsukuba.Rの軌跡,slideshare,Tokyo.R
+17,10,gepuro,ログ解析,NA,Tokyo.R
+18,1,aad34210,はじめてのR ,slideshare,Tokyo.R
+18,2,dichika,XLConnectで快適なエクセルライフのご提案,slideshare,Tokyo.R
+18,3,takemikami,Rによるデータサイエンス第13章「樹木モデル」,slideshare,Tokyo.R
+18,4,horihorio,Rで学ぶ現代ポートフォリオ理論,slideshare,Tokyo.R
+18,5,atgmacontnd,部分的最小二乗法,GoogleDocs,Tokyo.R
+18,6,kenchan0130_aki,最適化アレ コレ ソレ,slideshare,Tokyo.R
+18,7,holidayworking,RHadoopの紹介,slideshare,Tokyo.R
+18,8,Hiro_macchan,Rで計量経済（操作変数を使ったバイアス調整）,NA,Tokyo.R
+19,1,doraodora09,Rによるデータサイエンス第14章「ニューラルネットワーク」,NA,Tokyo.R
+19,2,fuji_fujimon,デリバティブについて,NA,Tokyo.R
+19,3,chiral,Rで色々やってみました,slideshare,Tokyo.R
+19,4,yokkuns,複雑ネットワーク徹底入門,NA,Tokyo.R
+19,5,kos59125,Rで解くFizzBuzz 問題,slideshare,Tokyo.R
+19,6,wdkz,RでGPU使ってみるわ～,slideshare,Tokyo.R
+20,1,sleipnir002,実行して4秒で動画-animationパッケージで動画作成-,slideshare,Tokyo.R
+20,2,teramonagi,ポアソン分布と指数分布のいけない関係,slideshare,Tokyo.R
+20,3,sfchaos,不均衡データのクラス分類,slideshare,Tokyo.R
+20,4,yokkuns,Rによるデータサイエンス 第15章 カーネル法とサポートベクターマシン,NA,Tokyo.R
+20,5,tyatsuta,R創設者Ross Ihakaからのメッセージをお読みください,slideshare,Tokyo.R
+20,6,dichika,お詫びとお知らせ,slideshare,Tokyo.R
+20,7,酒井,SVMでひったくりを予測,NA,Tokyo.R
+20,8,manozo,Rでマンデルブロ集合,slideshare,Tokyo.R
+21,1,aad34210,続はじめてのR,slideshare,Tokyo.R
+21,2,holidayworking,Rによるデータサイエンス第16章 集団学習,slideshare,Tokyo.R
+21,3,Hiro_macchan,Rで学ぶ観察データでの因果推定,slideshare,Tokyo.R
+21,4,horihorio,RでGARCHモデル,slideshare,Tokyo.R
+21,5,langstat,テキストマイニングで見る「機動戦士ガンダム」,slideshare,Tokyo.R
+21,6,yokkuns,uplift modeling,slideshare,Tokyo.R
+21,7,bob3bob3,RでPSM分析,ブログ,Tokyo.R
+21,8,atg,オタク的な標準偏差,NA,Tokyo.R
+21,9,teramonagi,菩薩でも分かる!Rで動かすExcelアドインの作り方,slideshare,Tokyo.R
+21,10,wdkz,Rが苦手な人に使って頂く,slideshare,Tokyo.R
+21,11,millionsmile,二部グラフを使ったソーシャルネットワーク,slideshare,Tokyo.R
+21,12,sleipnir002,TokyoBeerのご案内,NA,Tokyo.R
+22,1,sleipnir002,Rで学ぶデータサイエンス5 ロジスティック回帰,slideshare,Tokyo.R
+22,2,bob3bob3,アソシエーション分析,slideshare,Tokyo.R
+22,3,ito_yan,Rで実験計画法中編,NA,Tokyo.R
+22,4,yokkuns,選択バイアス入門,slideshare,Tokyo.R
+22,5,atg,どっち使う？分散の式,NA,Tokyo.R
+22,6,fuji_fujimon,ガチャとマルコフ連鎖,slideshare,Tokyo.R
+22,7,Prunus1350,RとProcessingの連携,slideshare,Tokyo.R
+22,8,chiral,MKLのshogun-toolboxをRで使う,slideshare,Tokyo.R
+22,9,shuyo,Rで音声合成やってみた,slideshare,Tokyo.R
+22,10,gepuro,らくがき！,slideshare,Tokyo.R
+23,1,Nikoriks,そういえば，Rとは何だったか思い出してみる,slideshare,Tokyo.R
+23,2,doradora09,Rによるやさしい統計学 2nd Time 第一章辺りでー！二章、三章は余力あれば,slideshare,Tokyo.R
+23,3,dichika,最近、混合効果モデルに興味をもった私がとりいそぎやったこと,slideshare,Tokyo.R
+23,4,yokkuns,傾向スコア解析とUplift Modelling,slideshare,Tokyo.R
+23,5,kos59125,CRAN Task Views でパッケージ管理,slideshare,Tokyo.R
+23,6,holidayworking,フォントの話,slideshare,Tokyo.R
+23,7,xiangze750,Rで力学系,slideshare,Tokyo.R
+23,8,kuwaken0925,Rでクリギング,NA,Tokyo.R
+23,9,teramonagi,あるおっさんが記録し続けたデータを使えば人生一発逆転か？,slideshare,Tokyo.R
+23,10,wdkz,RでつくるWebアプリ～rApache編～,slideshare,Tokyo.R
+23,11,bob3bob3,Rでネットワーク分析勉強会のご紹介,関連資料,Tokyo.R
+24,1,doradora09,[入門セッション] Rによるやさしい統計学 第2-3章,slideshare,Tokyo.R
+24,2,aad34210,NA,NA,Tokyo.R
+24,3,sfchaos,RでReproducible Research,slideshare,Tokyo.R
+24,4,kenchan0130_aki,Rでデータマイニング～サンプリングデータのケース～,slideshare,Tokyo.R
+24,5,holidayworking,データベースのお話し,slideshare,Tokyo.R
+24,6,ta2c,パフォーマンス R vs C#,slideshare,Tokyo.R
+24,7,yokkuns,マーケティングの統計分析-4.2プロモーション-,slideshare,Tokyo.R
+25,1,doradora09,初心者セッション,NA,Tokyo.R
+25,2,dichika,Rによるやさしい統計学第4章 母集団と標本,slideshare,Tokyo.R
+25,3,teramonagi,Rで学ぶ「倒産確率推定」,slideshare,Tokyo.R
+25,4,Hiro_macchan,びっぐでぇた解析環境あ～る～主としてRevolution Rのご紹介～,slideshare,Tokyo.R
+25,5,mrt_akm,ダイナミックOLS,NA,Tokyo.R
+25,6,Dubian100,NA,NA,Tokyo.R
+25,7,dichika,越えられない壁,slideshare,Tokyo.R
+25,8,Aki_Kasahara,Rの乱数でいろいろ乱数を作る,NA,Tokyo.R
+25,9,wdkz,RStudioで始めるTシャツ祭り,site,Tokyo.R
+25,10,bob3bob3,告知,NA,Tokyo.R
+26,1,holidayworking,NA,NA,Tokyo.R
+26,2,Dubian,NA,NA,Tokyo.R
+26,3,chiral,NA,NA,Tokyo.R
+26,4,yokkuns,NA,slideshare,Tokyo.R
+27,1,dichika,サンプリング方法とそれに基いた分析,NA,Tokyo.R
+27,2,teramonagi,R de 学ぶ逆変換法,slideshare,Tokyo.R
+27,3,holidayworking,ggplot2に入門してみた,slideshare,Tokyo.R
+27,4,mikado_hito,僕の考える真の可愛い女性について(仮),NA,Tokyo.R
+27,5,yokkuns,Rでカジュアルに異常検知 ChangeAnomalyDetectionパッケージ,NA,Tokyo.R
+28,1,horihorio,Rによるやさしい統計学 第6章 2つの平均値を比較する,slideshare,Tokyo.R
+28,2,aad34210,初心者セッション1,slideshare,Tokyo.R
+28,3,yokkuns,初心者セッション2 Rでピボットテーブル,slideshare,Tokyo.R
+28,4,dichika,シリーズ前処理2013：欠測データの補完 ,slideshare,Tokyo.R
+28,5,sanoche16,Rで行うブランド資産測定～自由記述文章分析編～,slideshare,Tokyo.R
+28,6,wdkz,shinyはじめました ,slideshare,Tokyo.R
+28,7,yokkuns,Rで階層ベイズモデル,slideshare,Tokyo.R
+28,8,atg,標準偏差と不偏標準偏差とを母集団の大きさと標本の大きさとを変えて比較してみた,NA,Tokyo.R
+28,9,bob3bob3,顔,NA,Tokyo.R
+28,10,mits321,アッシェンフェルターのワイン方程式,NA,Tokyo.R
+28,11,yokkuns,Rでレポートメール,slideshare,Tokyo.R
+28,12,Hiro_macchan,Pythonはじめました,slideshare,Tokyo.R
+29,1,h_chujo,Rによるやさしい統計学 第7章 分散分析,NA,Tokyo.R
+29,2,doradora09,初心者セッション1,slideshare,Tokyo.R
+29,3,mikado_hito,Rで始めるかもしれない顧客ベース分析,NA,Tokyo.R
+29,4,showyou,mboostパッケージについて,NA,Tokyo.R
+29,5,Soultoru,RでAHP ,slideshare,Tokyo.R
+29,6,sfchaos,シリーズ前処理2013：外れ値（仮）,slideshare,Tokyo.R
+29,7,Kentaro Taguchi,ベイジアンネットワークによる推論モデルの構築,NA,Tokyo.R
+29,8,knzwtkfm,R＠Qiita,NA,Tokyo.R
+29,9,yuukicammy,RとC++と画像処理 (PART2),NA,Tokyo.R
+29,10,sanoche16,信号検出理論とR,NA,Tokyo.R
+29,11,teramonagi,Tokyo.R 白熱教室「これからのRcppの話をしよう」,slideshare,Tokyo.R
+29,12,kussuu000,Rのコーディングを勉強してみた,NA,Tokyo.R
+29,13,＠argyle320,セイバーメトリクス,slideshare,Tokyo.R
+30,1,aad34210,初心者セッション1,slideshare,Tokyo.R
+30,2,aad34210,Rによるやさしい統計学 第7章 分散分析（後半）,slideshare,Tokyo.R
+30,3,7CIT,初心者セッション2,NA,Tokyo.R
+30,4,mikado_hito,協調フィルタリング入門,slideshare,Tokyo.R
+30,5,tech_machii,歴史を学んでR言語の未来を考える,NA,Tokyo.R
+30,6,bob3bob3,Rでコンジョイント分析,slideshare,Tokyo.R
+30,7,teramonagi,plyrパッケージで君も前処理スタ☆,slideshare,Tokyo.R
+30,8,yuukicammy,RとC++と画像処理 (PART3),NA,Tokyo.R
+30,9,kos59125,.NET で書いて R で実行,NA,Tokyo.R
+30,10,_TRIP_DANCER,fluentdとR でお手軽ログ解析,slideshare,Tokyo.R
+30,11,sfchaos,R 3.0.0 is released!,slideshare,Tokyo.R
+30,12,nezuq,RでSPARQL,slideshare,Tokyo.R
+30,13,wdkz,R-3.0.0を使ってみてわかったn個のこと,slideshare,Tokyo.R
+31,1,所沢義男,初心者セッション1,slideshare,Tokyo.R
+31,2,aad34210,Rによるやさしい統計学 第7章 分散分析（後半の後半）,slideshare,Tokyo.R
+31,3,hiratake55,中の人が語る seekR.jp の裏技（仮）,slideshare,Tokyo.R
+31,4,sanoche16,始めよう多変量解析～主成分分析編～,slideshare,Tokyo.R
+31,5,yokkuns,R言語で学ぶマーケティング分析 – 競争ポジショニング戦略 –,slideshare,Tokyo.R
+31,6,a_bicky,R による自然言語処理入門（仮）,slideshare,Tokyo.R
+31,7,gepuro,RとPythonによるデータ解析入門,slideshare,Tokyo.R
+31,8,tetsuroito,RでARIMAの話,slideshare,Tokyo.R
+31,9,chiral,rzmqで並列分散コンピューティング,slideshare,Tokyo.R
+31,10,teramonagi,可視化周辺の進化がヤヴァイ～rChartsを中心として～,slideshare,Tokyo.R
+31,11,ts_3156,ABテストと結果の検定,slideshare,Tokyo.R
+31,12,kos59125,R で自然順ソートを実装してみた,NA,Tokyo.R
+32,1,doradora09,初心者セッション1,NA,Tokyo.R
+32,2,後前川清,テキスト,NA,Tokyo.R
+32,3,sanoche16,平均から正規分布まで,slideshare,Tokyo.R
+32,4,sato_mitsunori,実践で学ぶネットワーク分析,slideshare,Tokyo.R
+32,5,argyle320,質的変数の相関と因子分析,slideshare,Tokyo.R
+32,6,tech_machii,S言語拡張のアイデアと淘汰,NA,Tokyo.R
+32,7,tanimocchi,サンプリングと推定(仮),NA,Tokyo.R
+32,8,manabian,NA,NA,Tokyo.R
+32,9,ts_3156,偽相関と偏相関係数,slideshare,Tokyo.R
+32,10,ts_3156,ニコニコ動画のタグネットワークを描画してみた,slideshare,Tokyo.R
+32,11,s3works,Rとオープンデータ(仮),slideshare,Tokyo.R
+33,1,aad34210,初心者セッション1,slideshare,Tokyo.R
+33,2,argyle320,因子分析,slideshare,Tokyo.R
+33,3,horihorio,ロジスティック回帰の考え方・使い方,slideshare,Tokyo.R
+33,4,TJO_datasci,Rで計量時系列分析～駆け足でCRANパッケージ総ざらい～,slideshare,Tokyo.R
+33,5,nxafmoishq08jXG,Rで項目反応理論、テキストマイニング、研修やってますという三題噺,サイト,Tokyo.R
+33,6,motivic_,21世紀の手法対決,slideshare,Tokyo.R
+33,7,doradora09,NA,slideshare,Tokyo.R
+33,8,後前川清,僕がRを使って篠崎愛似の彼女を見つけるまで,NA,Tokyo.R
+33,9,teramonagi,とある金融屋の統計技師が時系列解析してみた,slideshare,Tokyo.R
+33,10,Dubian,RcppEigen and SVD,slideshare,Tokyo.R
+33,11,kos59125,ゴミ箱のポジショントーク,blog,Tokyo.R
+33,12,qz70224,ひとり分散処理をやってみた,slideshare,Tokyo.R
+33,13,0kayu,R+python で KAGGLE2値予測に挑戦!,slideshare,Tokyo.R
+33,14,tanimocchi,相関係数と決定係数,slideshare,Tokyo.R
+33,15,langstat,機動戦士ガンダムのその後,NA,Tokyo.R
+33,16,所沢義男,『データサイエンティストになれなかった皆さんへ(仮)』,NA,Tokyo.R
+33,17,DTakaguchi,位置情報アプリのチェックインデータを使った相関分析,NA,Tokyo.R
+34,1,doradora09,初心者セッション1,[slideshare|],Tokyo.R
+34,2,gepuro,決定木,slideshare,Tokyo.R
+34,3,yokkuns,共分散構造分析,[slideshare|],Tokyo.R
+34,4,fuji_fujimon,MCMCとかの理論的なところをRで例を見ながら的な,slideshare,Tokyo.R
+34,5,sfchaos,アクションマイニングによる最適アクションの導出,slideshare,Tokyo.R
+34,6,yokkuns,ドリコムの分析環境とデータサイエンス活用事例,slideshare,Tokyo.R
+34,7,中原誠,決定木を用いた、異性タイプの嗜好パターン分析,NA,Tokyo.R
+35,1,doradora09,初心者セッション1,slideshare,Tokyo.R
+35,2,yokkuns,人工データの発生,slideshare,Tokyo.R
+35,3,Nikoriks,Rユーザーのための？Julia入門,slideshare,Tokyo.R
+35,4,sfchaos,Data.tableパッケージで大規模データをサクッと処理する,slideshare,Tokyo.R
+35,5,Med_KU,Rでネットワーク解析とGIS,slideshare,Tokyo.R
+35,6,kos59125,R Advent Calendar 2013 のご案内,NA,Tokyo.R
+35,7,tetsuroito,ロバスティーヌのお悩み,slideshare,Tokyo.R
+35,8,hoxo_m,5分でわかるベイズ確率,NA,Tokyo.R
+35,9,chiral,Multi-Armed-Bundit in R,slideshare,Tokyo.R
+35,10,gepuro,しゅうかつ,NA,Tokyo.R
+35,11,Kazuo_Ishii_PhD,ソフトウェアジャパン2014の紹介,NA,Tokyo.R
+35,12,後前川清,西内まりやとセブンイレブンのドミナント戦略のKPIとVisualisationについて,NA,Tokyo.R
+36,1,doradora09,導入セッション,NA,Tokyo.R
+36,2,TJO_datasci,Rによるやさしい統計学 第20章 検定力分析によるサンプルサイズの決定,NA,Tokyo.R
+36,3,teramonagi,～knitrパッケージではじめる～『R MarkdownでReproducible Research』,NA,Tokyo.R
+36,4,Med_KU,RでSPADEとSNEを使って次元削減と可視化,NA,Tokyo.R
+36,5,sanoche16,Rで学ぶ離散選択モデル,NA,Tokyo.R
+36,6,yokkuns,EasyHTMLReportの紹介 ,NA,Tokyo.R
+36,7,所沢義男,dplyrパッケージ徹底解説,NA,Tokyo.R
+36,8,れいや,ゲームパラメータの決定方法,NA,Tokyo.R
+36,9,Prunus1350,Rで部分空間法,NA,Tokyo.R
+36,10,tetsuroito,Rと確率分布,NA,Tokyo.R
+36,11,kos59125,RStan で作る人工データ,NA,Tokyo.R
+36,12,housecat442,Rで見るサーモンの価格周期性,NA,Tokyo.R
+37,1,dradora09,導入セッション,NA,Tokyo.R
+37,2,Prunus1350,テキスト ,NA,Tokyo.R
+37,3,srctaha,Rによる特徴選択,NA,Tokyo.R
+37,4,sanoche16,Rで学ぶ離散選択モデル(リベンジ) ,NA,Tokyo.R
+37,5,housecat442,Rでお部屋探し ,NA,Tokyo.R
+37,6,aich8,Rで分位点回帰,NA,Tokyo.R
+37,7,菅井,rchartsによるインタラクティブな可視化表現,NA,Tokyo.R
+37,8,Hiro_macchan,ちょっと詳しい欠測データの補完,NA,Tokyo.R
+37,9,yoshi_flt,生物成長曲線予測の事例 ,NA,Tokyo.R
+37,10,所沢義男,暮らしの中のデータマイニング その1 〜初対面の人に会うとき〜,NA,Tokyo.R
+37,11,tetsuroito,カーネルとSVM ,NA,Tokyo.R
+37,12,soultoru,NA,NA,Tokyo.R
+38,1,aad34210,導入セッション,NA,Tokyo.R
+38,2,Prunus1350,テキスト ,NA,Tokyo.R
+38,3,所沢義男,パッケージの作り方 ,NA,Tokyo.R
+38,4,sfchaos,機械学習のモデル構築・評価について,NA,Tokyo.R
+38,5,horihorio,状態空間モデルの考え方•使い方 ,NA,Tokyo.R
+38,6,berobero11,100人のための統計解析 – 和食レストラン編 ,NA,Tokyo.R
+38,7,kos59125,R で学ぶ関数型プログラミング,NA,Tokyo.R
+38,8,mtknnktm,NA,NA,Tokyo.R
+38,9,gg_hatano,Rで野球のデータ解析がしたい,NA,Tokyo.R
+38,10,hoxo_m,NA,NA,Tokyo.R
+38,11,tanimocchi,アンケート分析で、AICを自力でstepより改善してみた ,NA,Tokyo.R
+38,12,CrowdSolving_jp,某データ分析コンペサイトの話 ,NA,Tokyo.R
+39,1,aad34210,導入セッション,NA,Tokyo.R
+39,2,yokkuns,Rで学ぶデータマイニングⅠ 第14〜15章 ,NA,Tokyo.R
+39,3,data_sciesotist,(1)RStudioの日本語化(2)データサイエンスの研修やってます ,NA,Tokyo.R
+39,4,gg_hatano,Rで野球解析,NA,Tokyo.R
+39,5,TeitoNakagawa,Excelで集計分析 ,NA,Tokyo.R
+39,6,Hiro_macchan,Rと地図（とベイズ）のお話 ,NA,Tokyo.R
+39,7,siero5335,Devium を使ったヒト血清中化学物質の解析,NA,Tokyo.R
+39,8,teramonagi,お前の逐モン、GETだぜ！ ,NA,Tokyo.R
+39,9,salinger001101,Rでダイエット ,NA,Tokyo.R
+39,10,kndt84,NA,NA,Tokyo.R
+39,11,gepuro,家に早く帰りたい ,NA,Tokyo.R
+39,12,igjit,NA,NA,Tokyo.R
+39,13,sorami,RとJulia（仮）,NA,Tokyo.R
+39,14,satkita,高速で前処理するNYSOL ,NA,Tokyo.R
+40,1,aad34210,導入セッション 1,NA,Tokyo.R
+40,2,aad34210,導入セッション 2,NA,Tokyo.R
+40,3,所沢義男,Rで学ぶデータマイニングⅠ 第16章 ,NA,Tokyo.R
+40,4,kos59125,NA,NA,Tokyo.R
+40,5,argyle320,ハイブリッド型樹木法 ,NA,Tokyo.R
+40,6,housecat442,動学的パネルデータ分析,NA,Tokyo.R
+40,7,0kayu,独立成分分析 ,NA,Tokyo.R
+40,8,hisashinakayama,おとうさんでもできます ,NA,Tokyo.R
+40,9,data_sciesotist,RでExperience APIをいじる,NA,Tokyo.R
+40,10,hoxo_m,NA,NA,Tokyo.R
+40,11,tetsuroito,socceR！,NA,Tokyo.R
+40,12,yamano357,NA,NA,Tokyo.R
+41,1,doradora09,導入セッション 1,NA,Tokyo.R
+41,2,kotatyamatema,導入セッション 2,NA,Tokyo.R
+41,3,未定,Rで学ぶデータマイニングⅠ 第17章 ,NA,Tokyo.R
+41,4,kaz_yos,Rパッケージ作成,NA,Tokyo.R
+41,5,makiosum,I/Oについて　~ミスマッチを減らせ！～ ,NA,Tokyo.R
+41,6,salinger001101,サポートベクターマシン入門 〜オブジェクト自動識別システムの構築〜,NA,Tokyo.R
+41,7,yokkuns,NA,NA,Tokyo.R
+41,8,れいや,NA,NA,Tokyo.R
+41,9,中原誠,NA,NA,Tokyo.R
+41,10,所沢義男,NA,NA,Tokyo.R
+41,11,u_ribo,Yokohama.Rはじめますた ,NA,Tokyo.R
+41,12,atg,久しぶりのISM ,NA,Tokyo.R
+41,13,hiratake55,UseR!2014@LA ,NA,Tokyo.R
+42,1,gepuro,導入セッション 1,NA,Tokyo.R
+42,2,yokkuns,導入セッション 2 データの可視化（ggplot2）,NA,Tokyo.R
+42,3,yokkuns,Rで学ぶデータマイニングⅠ 第18章 ,NA,Tokyo.R
+42,4,yamano357,はじめようテキスト自動要約,NA,Tokyo.R
+42,5,teramonagi,パッケージ作成法（RStudio編）,NA,Tokyo.R
+42,6,所沢義男,データハンドリング系の何か,NA,Tokyo.R
+42,7,haroperi,Rの影について ,NA,Tokyo.R
+42,8,kumisky,NA,NA,Tokyo.R
+42,9,hoxo_m,Bokete Player の裏側 ,NA,Tokyo.R
+42,10,satkita,データサイエンティスト必見！M-1グランプリ ,NA,Tokyo.R
+42,11,motivic_,NA,NA,Tokyo.R
+42,12,fqz7c3,NA,NA,Tokyo.R
+43,1,doradora09,導入セッション 1,NA,Tokyo.R
+43,2,kashitan,前処理入門 ,NA,Tokyo.R
+43,3,azu-azu,テキスト ,NA,Tokyo.R
+43,4,siero5335,Rネイティブのbayesian inferenceである、LaplacesDemonの紹介 ,NA,Tokyo.R
+43,5,rossleedham,Getting Started with Shiny ,NA,Tokyo.R
+43,6,yokkuns,NA,NA,Tokyo.R
+43,7,shige_kei,NA,NA,Tokyo.R
+43,8,fqz7c3,32bit Windows で頑張るRandom Forest,NA,Tokyo.R
+43,9,0kayu,japanr ,NA,Tokyo.R
+43,10,hoxo_m,pipeR の使い方 ,NA,Tokyo.R
+43,11,kos59125,NA,NA,Tokyo.R
+43,12,IzumiMihashi,NA,NA,Tokyo.R
+44,1,doradora09,導入セッション 1,NA,Tokyo.R
+44,2,未定,NA,NA,Tokyo.R
+44,3,horihorio,テキスト：セグメンテーション ,NA,Tokyo.R
+44,4,sanoche16,シリーズ前処理2014 小綺麗なデータ作成 ,NA,Tokyo.R
+44,5,soultoru,Jubatusつかってみたよ ,NA,Tokyo.R
+44,6,G.O.R.N,NA,NA,Tokyo.R
+44,7,sfchaos,シリーズ前処理2014 次元削減,NA,Tokyo.R
+44,8,yamakita_lab,RColorBrewerとcolorRampPalette()で地図描画 ,NA,Tokyo.R
+44,9,weda_654,Rユーザーのためのmコマンド ,NA,Tokyo.R
+44,10,kumisky,ガチで理系な方に、その相関は間違ってます、と言われたマーケ女子の話 ,NA,Tokyo.R
+44,11,yokkuns,近況報告 ,NA,Tokyo.R
+44,12,所沢義男,この1年間を振り返って ,NA,Tokyo.R
+44,13,tetsuroito,これからのRとデータの話をしよう ,NA,Tokyo.R
+44,14,yamano357,NA,NA,Tokyo.R
+44,15,IzumiMihashi,NA,NA,Tokyo.R
+45,1,doradora09,導入セッション 1,NA,Tokyo.R
+45,2,aad34210,導入セッション2 ,NA,Tokyo.R
+45,3,yokkuns,Rによる回帰分析 ,NA,Tokyo.R
+45,4,tetsuroito,2015 Rコトハジメ ,NA,Tokyo.R
+45,5,u_ribo,シリーズ前処理2015① ,NA,Tokyo.R
+45,6,tyatsuta,typedFunction ∼型情報でRをスピードアップ ,NA,Tokyo.R
+45,7,yokkuns,カーネル多変量解析第2章 カーネル多変量解析の仕組み ,NA,Tokyo.R
+45,8,salinger001101,Jenkins によるレポートスクリプト管理,NA,Tokyo.R
+45,9,gg_hatano,巨人の勝率を上げるbot作りました ,NA,Tokyo.R
+45,10,ksmzn,Shiny で確率分布を学ぶアプリ作った,NA,Tokyo.R
+45,11,所沢義男,NA,NA,Tokyo.R
+45,12,wonder_zone,分析で好みの娘をぶっこぬく,NA,Tokyo.R
+45,13,hiratake55,「R for Cloud Computing」,NA,Tokyo.R
+45,14,IzumiMihashi,NA,NA,Tokyo.R
