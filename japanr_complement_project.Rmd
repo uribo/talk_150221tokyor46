@@ -53,6 +53,7 @@ citecolor: Black1
 ```
 
 ```{r using_pkg}
+library("Japan.useR")
 library("webshot")
 ```
 
@@ -160,12 +161,68 @@ webshot("https://twitter.com/yamano357/status/566860122928861184", "images/tweet
 
 ---
 
+Tokyo.R#1の発表内容を確認
+
+> \textcolor{White1}{materials(community = "Tokyo.R", number = 1)}
+
+---
+
+Tsukuba.R, Hiroshima.Rも
+
+> \textcolor{White1}{materials(community = "Tsukuba.R")}
+
+> \textcolor{White1}{materials(community = "Hiroshima.R", number = 1, session = 2)}
+
+---
+
+発表資料を閲覧 \newline（引数 browse = TRUE）
+
+> \textcolor{White1}{materials("Tokyo.R", 45, 5, browse = TRUE)}
+
+---
+
+特定の発表者の発表を表示
+
+> \textcolor{White1}{speaker(id = "u\_ribo")}
+
+---
+
+データセットを使って...
+
+> \textcolor{White1}{DT::datatable("JRSlide")}
+
+---
+
+データセットを使って...
+
+> \textcolor{White1}{grep("R", JRSlide\$Title, value = TRUE)}
+
+---
+
+データセットを使って...
+
+```{r, eval = FALSE}
+data("JRSlide")
+df <- data.frame()
+for (i in 1:nrow(JRSlide)) {
+  x <- RMeCab::RMeCabC(JRSlide$Title[i], 1)
+  x <- unlist(x)[names(unlist(x)) == "名詞"]
+  x <- data.frame(x)
+  df <- rbind(df, x)
+}
+dd <- table(df$x) %>% data.frame()
+wordcloud::wordcloud(dd$Var1, dd$Freq, scale=c(4, .8), min = 5, colors = c("#bdb76b", "#2a83a2"))
+```
+
+![](images/japanr_wordcloud.png)
+
+---
+
 \faTrash ボツ関数
 
 * 主催者(yokkuns)にメンションを飛ばす
 * 勉強会で話題になった「言葉」を出力
 * DYM::DYM("dichika")... 発表者のID、もしかして機能
-
 
 ---
 
@@ -174,15 +231,3 @@ webshot("https://twitter.com/yamano357/status/566860122928861184", "images/tweet
 Tokyo.Rをはじめ、各地のRコミュニケーション運営に関わる皆さま、発表者、参加者の皆さま
 
 R勉強会、コミュニティの発表をまとめてくださる方々
-
----
-
-\center{\Huge{\textbf{\textcolor{White1}{次回予告}}}}
-
----
-
-あなたのRプログラミングの「ｼｼｮｰ」は誰ですか
-
-* 昔: @nozma, `Tsukuba.R`の皆さん
-* 今: @hadleywickham, @xieyihui, pipeR三銃士
-* 最近: @yutannihilation
