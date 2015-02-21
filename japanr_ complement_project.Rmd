@@ -1,7 +1,7 @@
 ---
 # Lab.note package ver. 0.2.11
 title: \fontspec{DOCKER ONE}Japan\textcolor{Red1}{.R} \newline 補完計画
-subtitle: Tokyo.R#46 LT
+subtitle: Tokyo.R#46 LT \vspace{-1em}
 author: \faTwitter \fontspec{DOCKER ONE}@u_ribo\vspace{-1cm}
 date: \fontspec{DOCKER TWO}February 21, 2015
 header-includes:
@@ -24,7 +24,7 @@ header-includes:
     - \setbeamercolor{background canvas}{bg = Black1}
     - \setbeamertemplate{navigation symbols}{}
     - \setbeamertemplate{itemize items}{\textcolor{Blue1}{\faCaretRight}}
-    - \setbeamerfont{title}{size = \fontsize{46}{8}}
+    - \setbeamerfont{title}{size = \fontsize{60}{8}}
     - \setbeamercolor{title}{fg = White1}
     - \setbeamerfont{subtitle}{size = \large}
     - \setbeamercolor{subtitle}{fg = Blue1}
@@ -35,6 +35,7 @@ header-includes:
     - \setbeamercolor{frametitle}{fg = Blue1}
 # new command
     - \renewcommand{\baselinestretch}{1.0}
+    - \providecommand\faSlideshare{{\FA\symbol{"F1E7}}}
 output:
   beamer_presentation:
     fonttheme: "structurebold"
@@ -70,8 +71,8 @@ webshot(url = "https://atnd.org/events/2746", file = "images/atnd_tokyor.png", c
 
 ---
 
-* Tokyo.Rの情報は\textbf{すべてATNDに掲載されている}
-* \textbf{ATND API}を叩けば、イベント情報を取得できる
+* Tokyo.Rの情報は\textbf{\textcolor{White1}{すべてATNDに掲載されている}}
+* \textbf{\textcolor{White1}{ATND API}}を叩けば、イベント情報を取得できる
 
 \center{\large{\faArrowRight 過去のTokyo.Rを振り返り！}}
 
@@ -83,7 +84,7 @@ webshot("https://twitter.com/u_ribo/status/566851435392811008", "images/tweet_ur
 
 ![](images/tweet_uribo.png)
 
-\tiny{\url{https://twitter.com/u_ribo/status/566851435392811008}}
+\tiny{\faTwitter \url{https://twitter.com/u_ribo/status/566851435392811008}}
 
 ---
 
@@ -93,7 +94,7 @@ webshot("https://twitter.com/yamano357/status/566860122928861184", "images/tweet
 
 ![](images/tweet_mention_yamano357.png)
 
-\tiny{\url{https://twitter.com/yamano357/status/566860122928861184}}
+\tiny{\faTwitter \url{https://twitter.com/yamano357/status/566860122928861184}}
 
 ---
 
@@ -108,6 +109,13 @@ webshot("https://twitter.com/yamano357/status/566860122928861184", "images/tweet
 ---
 
 同様の発表や記事、調べたら\textbf{たくさん}あった。
+
+\begin{itemize}
+  \item{\footnotesize{\faSlideshare Tokyo.R\#44 TokyoRの話@yamano357}} %https://speakerdeck.com/yamano357/tokyor44-lt
+  \item{\footnotesize{\faSlideshare Tokyo.R\#26 Tokyo.Rの輪@manozo}} %http://www.slideshare.net/manozo/tokyor
+  \item{\footnotesize{\faSlideshare Tokyo.R\#17 TokyoRの軌跡@dichika}} %http://www.slideshare.net/dichika/tokyor17-9449827
+  \item{\footnotesize{TokyoR2014slideshare閲覧数ランキング}} %http://www.rpubs.com/dichika/rank2014
+\end{itemize}
 
 ---
 
@@ -129,35 +137,51 @@ webshot("https://twitter.com/yamano357/status/566860122928861184", "images/tweet
 
 ---
 
-第一次中間報告
+\faBullhorn 第一次中間報告
 
-* **全国のRコミュニティ**の活動をまとめたGitHubリポジトリを作成
-* **発表内容をデータセット**に集約した
-* **Rパッケージ**として開発中
+* \textbf{\textcolor{White1}{全国のRコミュニティ}}の活動をまとめたGitHubリポジトリを作成
+* \textbf{\textcolor{White1}{発表内容をデータセット}}に集約した
+* \textbf{\textcolor{White1}{Rパッケージ}}として開発中
+
+---
+
+* 主な情報源
+    * \footnotesize{勉強会発表内容一覧 \faLink http://lab.sakaue.info}
+    * \footnotesize{ATND}
+    * \footnotesize{INPUTしたらOUTPUT! \faLink http://estrellita.hatenablog.com}
+* 使用パッケージ... \footnotesize{\textit{\textcolor{White1}{rvest, stringr, dplyr, magrittr, Nippon, RJSONIO, RCurl...}}}
+* ATND APIはJSON形式で取得。リストの使い方難しい...
 
 ---
 
 \center{\Huge{\fontspec{DOCKER ONE}\textcolor{White1}{DEMO}}}
 
-\faArrowRight \url{https://github.com/uribo/Japan.useR}
+\faGithub \url{https://github.com/uribo/Japan.useR}
 
 ---
 
-## 謝辞
+\faTrash ボツ関数
+
+* 主催者(yokkuns)にメンションを飛ばす
+* 勉強会で話題になった「言葉」を出力
+* DYM::DYM("dichika")... 発表者のID、もしかして機能
+
+
+---
+
+\faGroup 謝辞
 
 Tokyo.Rをはじめ、各地のRコミュニケーション運営に関わる皆さま、発表者、参加者の皆さま
 
 R勉強会、コミュニティの発表をまとめてくださる方々
 
-（Special Thanks）
+---
+
+\center{\Huge{\textbf{\textcolor{White1}{次回予告}}}}
 
 ---
 
-\center{\Huge{\textcolor{White1}{次回予告}}}
-
----
-
-## あなたのRプログラミングの「ｼｼｮｰ」は誰ですか
+あなたのRプログラミングの「ｼｼｮｰ」は誰ですか
 
 * 昔: @nozma, `Tsukuba.R`の皆さん
 * 今: @hadleywickham, @xieyihui, pipeR三銃士
